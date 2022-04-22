@@ -19,7 +19,7 @@ Then run `bundle install`.
 In your `Rakefile` or `*.rake` task file:
 
 ```ruby
-require `boathook`
+require 'boathook'
 
 namespace :docker do
   Boathook::DockerTasks.new do |t|
