@@ -53,13 +53,11 @@ module Boathook
       puts "Building #{image.description}"
       puts "With labels #{label_pairs}" if labels
       image.build(label_pairs)
-      #system 'docker', 'build', '-t', image.tag, *label_args, '-f', image.dockerfile, image.context
     end
 
     def push_image(image)
       puts "Pushing #{image.tag}"
       image.push
-      #system 'docker', 'push', image.tag
     end
 
     def label_pairs
