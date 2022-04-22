@@ -9,7 +9,7 @@ Rake tasks for managing an application's Docker images
 In your `Gemfile`:
 
 ```ruby
-gem 'boathook', git: 'https://github.com/umd-lib/boathook'
+gem 'boathook', git: 'https://github.com/umd-lib/boathook', tag: 'main'
 ```
 
 Then run `bundle install`.
