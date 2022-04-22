@@ -62,8 +62,13 @@ docker image inspect image-name:tag | jq '.[].Config.Labels'
 
 ## The Name
 
-This library is built on top of [Mattock], which itself is built on top of [Rake]. Combine these with the fact that Docker is already heavily nautically themed, and you get: Boathook!
+This library is built on top of [Mattock], which itself is built on top of [Rake]. Combine these with the fact that Docker is already heavily nautically themed, and you get: [Boathook]!
+
+## License
+
+See the [LICENSE](LICENSE) file for license rights and limitations (Apache 2.0).
 
 [jq]: https://stedolan.github.io/jq/
 [Mattock]: https://rubygems.org/gems/mattock
 [Rake]: https://ruby.github.io/rake/
+[Boathook]: https://github.com/umd-lib/boathook
