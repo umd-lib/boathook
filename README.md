@@ -6,15 +6,13 @@ Rake tasks for managing an application's Docker images
 
 ### Installation
 
-```bash
-gem install boathook
+In your `Gemfile`:
+
+```ruby
+gem 'boathook', git: 'https://github.com/umd-lib/boathook'
 ```
 
-or
-
-```bash
-bundle add boathook
-```
+Then run `bundle install`.
 
 ### Usage
 
