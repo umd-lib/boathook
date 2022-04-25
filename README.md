@@ -60,7 +60,7 @@ docker image inspect image-name:tag | jq '.[].Config.Labels'
 
 ## The Name
 
-This library is built on top of [Mattock], which itself is built on top of [Rake]. Combine these with the fact that Docker is already heavily nautically themed, and you get: [Boathook]!
+This library is built on top of [Mattock], which itself is built on top of [Rake]. Combine these with the fact that Docker is heavily nautically themed, and you get: [Boathook]!
 
 ## License
 
