@@ -17,7 +17,7 @@ module Boathook
     end
 
     def build(label_pairs)
-      label_pairs.map { |label| ['--label', label] }.flatten
+      label_args = label_pairs.map { |label| ['--label', label] }.flatten
       system 'docker', 'build', '-t', tag, *label_args, '-f', dockerfile, context
     end
 
@@ -62,10 +62,6 @@ module Boathook
 
     def label_pairs
       labels.map { |k, v| "#{k}=#{v}" }
-    end
-
-    def label_args
-      label_pairs.map { |label| ['--label', label] }.flatten
     end
 
     # Labels to add to each image. Include the application version, and the Git revision (for
